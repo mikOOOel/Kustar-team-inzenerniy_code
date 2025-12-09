@@ -220,9 +220,10 @@ ul {
 .member-photo {
     width: 100px;
     height: 100px;
-    background-color: #111; /* Black square placeholder */
+    object-fit: cover;
     margin: 0 auto 20px;
-    border-radius: 12px;
+    border-radius: 50%; /* Circle for avatar */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .role {
@@ -292,9 +293,14 @@ footer {
 }
 
 .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.js-enabled .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .fade-in.visible {
@@ -316,6 +322,6 @@ footer {
     }
     
     .nav-links {
-        display: none; /* Mobile menu hidden for simplicity */
+        display: none; /* Simple hiding for mobile for this specific file request */
     }
 }
