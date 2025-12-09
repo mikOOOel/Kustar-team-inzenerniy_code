@@ -1,72 +1,132 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kustar — Команда</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kustar Team - Гимназия №35</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <img src="kustarlogo.jpg" class="nav-logo">
-        <span class="nav-title">Kustar</span>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="kustarlogo.jpg" alt="Kustar Logo" id="nav-logo">
+                <span class="logo-text">KUSTAR</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#organization">Организация</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- HEADER -->
-    <header class="hero">
-        <h1>Команда Kustar</h1>
-        <p>Проект Гимназии №35</p>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-content fade-in-up">
+            <h1>Команда <span class="highlight">Kustar</span></h1>
+            <p>Творческая и техническая команда учеников Гимназии №35, создающая проекты, объединяющие идеи, технологии и инициативу.</p>
+            <a href="#team" class="btn">Познакомиться</a>
+        </div>
+        <div class="hero-shape"></div>
     </header>
 
-    <div class="container">
+    <!-- Team Section -->
+    <section class="section" id="team">
+        <div class="container">
+            <h2 class="section-title fade-in">Наша Команда</h2>
+            
+            <div class="team-leader fade-in">
+                <div class="leader-card card">
+                    <div class="card-content">
+                        <h3>Руководитель</h3>
+                        <p class="name">Мясоедова Полина Александровна</p>
+                        <p class="role">Учитель информатики</p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- 1 -->
-        <section class="card fade">
-            <h2>МАОУ "Гимназия №35"</h2>
-            <p><b>Муниципальное автономное общеобразовательное учреждение города Владимира "Гимназия №35"</b></p>
-            <p><b>Адрес:</b> г. Владимир, ул. Комиссарова, д. 39</p>
-            <p><b>Сайт:</b> <a href="https://t44341e.sch.obrazovanie33.ru" target="_blank">Перейти</a></p>
-        </section>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="card member-card fade-in">
+                    <div class="member-photo placeholder-photo"></div>
+                    <div class="card-content">
+                        <h3>Шулятьев Аркадий</h3>
+                        <p class="role">Участник</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="card member-card fade-in">
+                    <div class="member-photo placeholder-photo"></div>
+                    <div class="card-content">
+                        <h3>Мамедов Микаэль</h3>
+                        <p class="role">Участник</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="card member-card fade-in">
+                    <div class="member-photo placeholder-photo"></div>
+                    <div class="card-content">
+                        <h3>Егоров Владислав</h3>
+                        <p class="role">Участник</p>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="card member-card fade-in">
+                    <div class="member-photo placeholder-photo"></div>
+                    <div class="card-content">
+                        <h3>Легин Егор</h3>
+                        <p class="role">Участник</p>
+                    </div>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="card member-card fade-in">
+                    <div class="member-photo placeholder-photo"></div>
+                    <div class="card-content">
+                        <h3>Ротдойч Вера</h3>
+                        <p class="role">Участник</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- 2 -->
-        <section class="card fade">
-            <h2>Команда Kustar</h2>
-            <p>
-                Kustar — творческая и технически ориентированная команда учеников Гимназии №35.  
-                Мы объединяем знания, инициативу и желание создавать проекты, которые приносят реальную пользу.
-            </p>
-        </section>
+    <!-- Logo Section -->
+    <section class="section logo-section">
+        <div class="container fade-in">
+            <h2 class="section-title">Символ Команды</h2>
+            <div class="logo-display">
+                <img src="kustarlogo.jpg" alt="Логотип Kustar" class="big-logo">
+            </div>
+        </div>
+    </section>
 
-        <!-- 3 -->
-        <section class="card fade">
-            <h2>Участники</h2>
-            <p><b>Руководитель:</b> Мясоедова Полина Александровна</p>
-            <ul>
-                <li>Шулятьев Аркадий</li>
-                <li>Мамедов Микаэль</li>
-                <li>Егоров Владислав</li>
-                <li>Легин Егор</li>
-                <li>Ротдойч Вера</li>
-            </ul>
-        </section>
+    <!-- Organization Section -->
+    <section class="section org-section" id="organization">
+        <div class="container fade-in">
+            <h2 class="section-title">Организация</h2>
+            <div class="org-card card">
+                <h3>МАОУ "Гимназия №35"</h3>
+                <p class="full-name">Муниципальное автономное общеобразовательное учреждение города Владимира "Гимназия №35" (МАОУ "Гимназия №35")</p>
+                <div class="org-details">
+                    <p><strong>Адрес:</strong> г. Владимир, ул. Комиссарова, д. 39</p>
+                    <p><strong>Сайт:</strong> <a href="https://t44341e.sch.obrazovanie33.ru/" target="_blank">t44341e.sch.obrazovanie33.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- 4 -->
-        <section class="card fade">
-            <h2>Фото команды</h2>
-            <div class="team-photo"></div>
-        </section>
-
-        <!-- 5 -->
-        <section class="card fade">
-            <h2>Логотип команды</h2>
-            <img src="kustarlogo.jpg" class="logo-img">
-        </section>
-
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kustar Team. Все права защищены.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
