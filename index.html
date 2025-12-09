@@ -1,260 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Команда Kustar | Гимназия №35</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kustar — Команда</title>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <!-- Шапка -->
+
+    <!-- HEADER -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h1>KUSTAR<span class="logo-dot">.</span></h1>
-                </div>
-                <div class="school-info">
-                    <div class="school-badge">
-                        <i class="fas fa-school"></i>
-                        <span>Гимназия №35</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1 class="title">Команда Kustar</h1>
+        <p class="subtitle">Проект Гимназии №35</p>
     </header>
 
-    <!-- Герой секция -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content animate__animated animate__fadeIn">
-                <div class="hero-text">
-                    <h2 class="hero-title">КОМАНДА <span class="hero-highlight">KUSTAR</span></h2>
-                    <p class="hero-subtitle">Мы создаём инновационные решения и воплощаем идеи в реальность</p>
-                    <div class="hero-cta">
-                        <a href="#team" class="cta-button">
-                            <i class="fas fa-arrow-right"></i>
-                            <span>Узнать о нас</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="floating-elements">
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                    </div>
-                </div>
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- 1) Организация -->
+        <section class="card fade">
+            <h2>МАОУ "Гимназия №35"</h2>
+            <p><b>Муниципальное автономное общеобразовательное учреждение города Владимира "Гимназия №35"</b></p>
+            <p><b>Адрес:</b> г. Владимир, ул. Комиссарова, д. 39</p>
+            <p><b>Сайт:</b> <a href="https://t44341e.sch.obrazovanie33.ru" target="_blank">Перейти</a></p>
+        </section>
+
+        <!-- 2) Команда -->
+        <section class="card fade">
+            <h2>Команда Kustar</h2>
+            <p>
+                Kustar — команда инициативных и увлечённых учеников Гимназии №35.  
+                Мы любим технологии, проектную деятельность и нестандартные решения.  
+                Наша цель — создавать, развиваться и двигаться вперёд.
+            </p>
+        </section>
+
+        <!-- 3) Участники -->
+        <section class="card fade">
+            <h2>Участники и руководитель</h2>
+            <p><b>Руководитель:</b> Мясоедова Полина Александровна</p>
+            <p><b>Участники:</b></p>
+            <ul>
+                <li>Шулятьев Аркадий</li>
+                <li>Мамедов Микаэль</li>
+                <li>Егоров Владислав</li>
+                <li>Легин Егор</li>
+                <li>Ротдойч Вера</li>
+            </ul>
+        </section>
+
+        <!-- 4) Фото команды -->
+        <section class="card fade">
+            <h2>Фото команды</h2>
+            <div class="team-photo"></div>
+        </section>
+
+        <!-- 5) Логотип -->
+        <section class="card fade">
+            <h2>Логотип команды</h2>
+            <div class="logo-box">
+                <!-- ты сюда вставишь своё изображение: logo.png -->
+                <p>Сюда вставляется логотип (logo.png)</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Информация о гимназии -->
-    <section class="school-section">
-        <div class="container">
-            <div class="school-card">
-                <div class="card-header">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3>МАОУ "Гимназия №35"</h3>
-                </div>
-                <div class="card-content">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>г. Владимир, ул. Комиссарова, д. 39</p>
-                    </div>
-                    <a href="https://t44341e.sch.obrazovanie33.ru/" target="_blank" class="school-link">
-                        <i class="fas fa-external-link-alt"></i>
-                        <span>Официальный сайт гимназии</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- О команде -->
-    <section class="about-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>О КОМАНДЕ</h2>
-                <div class="title-line"></div>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Команда <strong>Kustar</strong> — это коллектив талантливых учащихся Гимназии №35, объединённых интересом к современным технологиям и программированию. Мы — мастера своего дела, которые подходят к решению задач с креативностью и вниманием к деталям.</p>
-                    <p>Наша цель — не просто участие в конкурсах, а развитие практических навыков, которые пригодятся в будущем: работа в команде, проектирование, разработка и презентация идей. Мы верим, что технологиями можно менять мир к лучшему.</p>
-                    <p>Каждый проект для нас — это возможность научиться чему-то новому, проявить себя и создать что-то действительно стоящее.</p>
-                </div>
-                
-                <div class="about-stats">
-                    <div class="stat">
-                        <div class="stat-number">6</div>
-                        <div class="stat-label">Человек в команде</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <div class="stat-label">Общая цель</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Фото команды -->
-    <section class="photo-section">
-        <div class="container">
-            <div class="photo-container">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <h3>ФОТО КОМАНДЫ</h3>
-                    <p>Здесь будет наше общее фото</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Состав команды -->
-    <section id="team" class="team-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>НАША КОМАНДА</h2>
-                <div class="title-line"></div>
-                <p class="section-subtitle">Вместе мы достигаем большего</p>
-            </div>
-
-            <div class="team-grid">
-                <!-- Руководитель -->
-                <div class="team-card leader">
-                    <div class="card-avatar">
-                        <div class="avatar-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="leader-badge">
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Мясоедова Полина Александровна</h3>
-                        <p class="card-role">Руководитель команды</p>
-                        <p class="card-desc">Учитель информатики</p>
-                    </div>
-                </div>
-
-                <!-- Участники -->
-                <div class="team-card">
-                    <div class="card-avatar">
-                        <div class="avatar-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Шулятьев Аркадий</h3>
-                        <p class="card-role">Участник команды</p>
-                    </div>
-                </div>
-
-                <div class="team-card">
-                    <div class="card-avatar">
-                        <div class="avatar-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Мамедов Микаэль</h3>
-                        <p class="card-role">Участник команды</p>
-                    </div>
-                </div>
-
-                <div class="team-card">
-                    <div class="card-avatar">
-                        <div class="avatar-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Егоров Владислав</h3>
-                        <p class="card-role">Участник команды</p>
-                    </div>
-                </div>
-
-                <div class="team-card">
-                    <div class="card-avatar">
-                        <div class="avatar-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Легин Егор</h3>
-                        <p class="card-role">Участник команды</p>
-                    </div>
-                </div>
-
-                <div class="team-card">
-                    <div class="card-avatar">
-                        <div class="avatar-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Ротдойч Вера</h3>
-                        <p class="card-role">Участник команды</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Контакты -->
-    <section class="contacts-section">
-        <div class="container">
-            <div class="contacts-card">
-                <div class="contacts-header">
-                    <div class="contacts-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>КОНТАКТЫ</h3>
-                </div>
-                <div class="contacts-content">
-                    <a href="mailto:mikael.mamedov.2017@mail.ru" class="email-link">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>mikael.mamedov.2017@mail.ru</span>
-                    </a>
-                    <p class="contacts-note">Свяжитесь с нами для сотрудничества</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Подвал -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="footer-logo">
-                        <i class="fas fa-code"></i>
-                        <span>KUSTAR</span>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <div class="footer-signature">
-                        mikOOOel
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
