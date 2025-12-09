@@ -1,82 +1,101 @@
-/* Общий фон — плавный сине-фиолетовый градиент */
+/* ФОН — плавный сине-фиолетовый градиент */
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3cff, #7b3ff5);
+    font-family: "Inter", Arial, sans-serif;
+    background: linear-gradient(135deg, #1c2be9, #7b2df5);
     color: #ffffff;
 }
 
-/* Шапка */
-.header {
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+    position: sticky;
+    top: 0;
+}
+
+.nav-logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    padding: 60px 20px;
-    color: white;
+    padding: 80px 20px;
     animation: fadeDown 1.2s ease;
 }
 
-.title {
-    font-size: 42px;
-    font-weight: 800;
+.hero h1 {
+    font-size: 52px;
     margin: 0;
-    text-shadow: 0 0 15px rgba(255,255,255,0.4);
 }
 
-.subtitle {
+.hero p {
+    margin-top: 12px;
     font-size: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-/* Контейнер */
+/* КОНТЕЙНЕР */
 .container {
     width: 90%;
     max-width: 900px;
     margin: auto;
 }
 
-/* Карточки */
+/* КАРТОЧКИ — неоморфизм */
 .card {
-    background: white;
-    color: #1e3cff;
-    padding: 25px;
-    border-radius: 18px;
-    margin: 20px 0;
-    box-shadow: 0 0 25px rgba(0,0,0,0.2);
-    position: relative;
-    overflow: hidden;
+    background: rgba(255,255,255,0.13);
+    backdrop-filter: blur(20px);
+    padding: 32px;
+    border-radius: 22px;
+    margin: 30px 0;
+    box-shadow: 
+        10px 10px 25px rgba(0,0,0,0.25),
+        inset 2px 2px 8px rgba(255,255,255,0.15);
+    color: #e9e9ff;
 }
 
+/* ТЕКСТЫ */
 .card h2 {
     margin-top: 0;
+    color: #ffffff;
+}
+
+a {
+    color: #b8c7ff;
 }
 
 /* Фото команды */
 .team-photo {
     width: 100%;
     height: 260px;
-    background: black; /* черный квадрат */
-    border-radius: 12px;
+    background: black;
+    border-radius: 18px;
 }
 
-/* Логотип */
-.logo-box {
-    width: 200px;
-    height: 200px;
-    border: 3px dashed #1e3cff;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    color: #1e3cff;
-    font-weight: 700;
-    margin-top: 10px;
+/* ЛОГО */
+.logo-img {
+    width: 260px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    margin-top: 15px;
 }
 
 /* Анимации */
 .fade {
     opacity: 0;
-    transform: translateY(30px);
-    transition: 0.8s;
+    transform: translateY(40px);
+    transition: 1s ease;
 }
 
 .fade.show {
