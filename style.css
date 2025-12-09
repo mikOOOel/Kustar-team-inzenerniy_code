@@ -1,14 +1,14 @@
-// Анимация появления блоков
-const faders = document.querySelectorAll('.fade');
+const blocks = document.querySelectorAll('.fade');
 
-function showOnScroll() {
+function showElements() {
     const trigger = window.innerHeight * 0.85;
 
-    faders.forEach(block => {
-        const top = block.getBoundingClientRect().top;
-        if (top < trigger) block.classList.add('show');
+    blocks.forEach(b => {
+        if (b.getBoundingClientRect().top < trigger) {
+            b.classList.add('show');
+        }
     });
 }
 
-window.addEventListener('scroll', showOnScroll);
-window.addEventListener('load', showOnScroll);
+window.addEventListener('scroll', showElements);
+window.addEventListener('load', showElements);
