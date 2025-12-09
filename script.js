@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Logo placeholder handling
+    // We already have a real image from generation, but if we need to swap the path
+    // in the strictly 3 files version, we assume the file exists relative to index.html
+    
     // Intersection Observer for scroll animations
     const observerOptions = {
         root: null,
@@ -25,4 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Simple mobile menu toggle (if we add burger menu interactivity)
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    
+    if(burger) {
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    }
+});
