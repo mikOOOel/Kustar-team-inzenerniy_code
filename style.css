@@ -217,6 +217,16 @@ ul {
     padding: 40px 20px;
 }
 
+.team-photo-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: #000;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
 .member-photo {
     width: 100px;
     height: 100px;
